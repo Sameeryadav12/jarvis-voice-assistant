@@ -187,6 +187,77 @@ pip install pygame edge-tts
 
 ---
 
+## 🔮 Future Plans & Roadmap
+
+**Jarvis is actively developed with exciting features planned!**
+
+### 🎯 Coming Soon (Next 3 Months)
+
+**🎙️ Enhanced Voice Experience:**
+- ✨ "Hey Jarvis" wake word detection - Hands-free activation
+- 🔄 Continuous conversation mode - Natural back-and-forth
+- ⚡ Smarter Voice Activity Detection - Faster response times
+- 🎵 Multiple voice options - Male/female, accents, speed control
+
+**🧠 Advanced Intelligence:**
+- 🧩 Context memory - "What about tomorrow?" after setting an event
+- 🎯 Multi-intent commands - "Set volume to 50 and check battery"
+- 🎨 Custom voice macros - Create your own command shortcuts
+- 📚 Learning system - Gets smarter with your usage
+
+**🎨 UI/UX Improvements:**
+- 🔔 System tray integration - Run in background
+- ⌨️ Keyboard shortcuts - Quick activation (Ctrl+Shift+Space)
+- 🌙 Themes - Light mode, custom colors, high contrast
+- 📊 Animated visualizations - Waveforms, spectrum analyzer
+
+### 🚀 Mid-Term (3-6 Months)
+
+**🏠 Smart Home Integration:**
+- 🏡 Home Assistant support - Control smart devices
+- 🔗 IFTTT integration - Connect 600+ services
+- 🔌 Custom device plugins - API for third-party integrations
+
+**💼 Productivity Features:**
+- 📧 Email integration - Read and send emails by voice
+- 📅 Calendar intelligence - Smart scheduling, auto-join meetings
+- ✅ Task management - Voice-controlled to-do lists
+- 📝 Document assistant - Dictation mode, summaries, quick notes
+
+**🌐 Web Integration:**
+- 🔍 Smart web search - Voice search with result summaries
+- 🤖 Web automation - Form filling, page navigation
+- 📱 Social media - Post and check notifications by voice
+
+### 🌟 Long-Term Vision (6-12 Months)
+
+**🤖 AI Enhancement:**
+- 🧠 GPT-4 integration - Intelligent, creative responses
+- 🔐 Local LLM option - Complete privacy with offline AI
+- 💡 Semantic understanding - Better context comprehension
+
+**📱 Multi-Platform:**
+- 🍎 macOS support - Native Mac experience
+- 🐧 Linux support - Cross-platform compatibility
+- 📱 Mobile companion app - Android/iOS remote control
+
+**🏢 Enterprise Features:**
+- 👥 Multi-user support - Voice recognition per user
+- 🔒 Enhanced privacy & security - End-to-end encryption
+- 👔 Team features - Shared calendars, collaboration tools
+
+### 🔬 Innovation & Research
+
+**Experimental Features:**
+- 😊 Emotion detection from voice
+- 🎯 Proactive assistance - Suggests actions before you ask
+- 👋 Gesture control - Touchless interaction
+- 🔮 AR visualization - Holographic-style interface
+
+**→ [View Complete Roadmap](docs/technical/ROADMAP.md)** with detailed timelines and priorities!
+
+---
+
 ## 🤝 Contributing
 
 Contributions welcome! See [Contributing Guide](docs/technical/CONTRIBUTING.md)
