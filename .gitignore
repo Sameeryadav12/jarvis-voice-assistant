@@ -1,0 +1,83 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+logs/
+*.log
+
+# Databases
+chroma_db/
+*.db
+*.sqlite
+*_db/
+demo_memory/
+test_*_db/
+
+# Cache
+tts_cache/
+__pycache__/
+.pytest_cache/
+
+# Audio
+*.wav
+*.mp3
+*.ogg
+test_speech.mp3
+simple_test.mp3
+
+# Config (keep template, ignore user configs)
+config/google_credentials.json
+config/user_settings.yaml
+
+# Models (too large for git)
+models/
+*.bin
+*.ggml
+
+# Temporary
+*.tmp
+*.temp
+temp/
+
+# Build artifacts
+*.spec
+*.exe
+*.msi
+
+# Development
+.coverage
+.tox/
+.mypy_cache/
+.dmypy.json
+
+# Windows
+$RECYCLE.BIN/
+
+# Documentation builds
+docs/_build/
+site/

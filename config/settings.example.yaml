@@ -1,0 +1,186 @@
+# Jarvis Configuration File
+# Copy this file to settings.yaml and customize
+
+# General Settings
+general:
+  app_name: "Jarvis"
+  version: "0.1.0"
+  log_level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  log_file: "logs/jarvis.log"
+
+# Audio Settings
+audio:
+  sample_rate: 16000
+  channels: 1
+  chunk_duration_ms: 30
+  buffer_size_seconds: 10
+  
+  # Input device (null for default)
+  input_device: null
+  
+  # Output device (null for default)
+  output_device: null
+
+# Wake Word Settings (Porcupine)
+wake_word:
+  enabled: true
+  access_key: ""  # Get from console.picovoice.ai
+  keyword: "jarvis"  # Built-in: jarvis, computer, alexa, etc.
+  sensitivity: 0.5  # 0.0 to 1.0
+  
+  # Custom keyword file (optional)
+  custom_keyword_path: null
+
+# Speech-to-Text Settings
+stt:
+  # Mode: 'offline' (whisper.cpp) or 'cloud' (OpenAI Realtime)
+  mode: "offline"
+  
+  # Offline Settings (whisper.cpp)
+  offline:
+    model_path: "models/ggml-base.en.bin"
+    binary_path: "whisper-cpp/main"
+    language: "en"
+    num_threads: 4
+  
+  # Cloud Settings (OpenAI Realtime API)
+  cloud:
+    api_key: ""  # OpenAI API key
+    model: "gpt-4o-realtime-preview-2024-10-01"
+    voice: "alloy"  # alloy, echo, fable, onyx, nova, shimmer
+    temperature: 0.8
+
+# Natural Language Understanding
+nlu:
+  # spaCy model
+  spacy_model: "en_core_web_sm"
+  
+  # Intent confidence threshold
+  confidence_threshold: 0.5
+  
+  # Custom patterns file (optional)
+  custom_patterns: null
+
+# Text-to-Speech Settings
+tts:
+  # Mode: 'piper' (offline) or 'edge' (cloud)
+  mode: "piper"
+  
+  # Offline Settings (Piper)
+  piper:
+    model_path: "models/piper/en_US-lessac-medium.onnx"
+    binary_path: "piper/piper"
+    sample_rate: 22050
+  
+  # Cloud Settings (Edge TTS)
+  edge:
+    voice: "en-US-AriaNeural"  # en-US-AriaNeural, en-US-GuyNeural, etc.
+    rate: "+0%"  # Speech rate adjustment
+    volume: "+0%"  # Volume adjustment
+
+# Memory Settings (Vector Store)
+memory:
+  enabled: true
+  persist_directory: "./chroma_db"
+  collection_name: "jarvis_memory"
+  
+  # Maximum context items to retrieve
+  max_context_items: 10
+  
+  # Auto-save conversation
+  auto_save_conversation: true
+
+# Skills Settings
+skills:
+  # System Skills (volume, window focus, etc.)
+  system:
+    enabled: true
+  
+  # Calendar Skills
+  calendar:
+    enabled: false
+    credentials_file: "credentials.json"
+    timezone: "America/Los_Angeles"
+  
+  # Reminder Skills
+  reminders:
+    enabled: true
+    persistent: false  # Persist reminders across restarts
+  
+  # Web Skills
+  web:
+    enabled: false
+    headless: true  # Run browser in headless mode
+
+# Notifications
+notifications:
+  enabled: true
+  # Windows: uses Windows-Toasts
+  # Linux: uses libnotify
+  # macOS: uses osascript
+
+# UI Settings
+ui:
+  # Show desktop UI
+  enabled: true
+  
+  # Window settings
+  width: 800
+  height: 600
+  always_on_top: false
+  start_minimized: false
+  
+  # Theme
+  theme: "dark"  # dark, light
+  
+  # Update interval (ms)
+  update_interval: 100
+
+# Hotkeys
+hotkeys:
+  # Push-to-talk hotkey (null to disable)
+  push_to_talk: "ctrl+shift+space"
+  
+  # Toggle UI hotkey
+  toggle_ui: "ctrl+shift+j"
+  
+  # Mute/unmute hotkey
+  mute_toggle: null
+
+# Security & Privacy
+security:
+  # Encrypted credential storage
+  encrypt_credentials: true
+  
+  # Require confirmation for sensitive actions
+  require_confirmation:
+    - "system.volume"
+    - "web.automation"
+  
+  # Allowed skills (empty = all allowed)
+  allowed_skills: []
+
+# Telemetry (opt-in)
+telemetry:
+  enabled: false
+  anonymous: true
+  endpoint: null
+
+# Advanced Settings
+advanced:
+  # Enable debug mode
+  debug: false
+  
+  # Profile performance
+  profile: false
+  
+  # Auto-restart on crash
+  auto_restart: false
+  
+  # Maximum memory usage (MB)
+  max_memory_mb: 1024
+
+
+
+
+
